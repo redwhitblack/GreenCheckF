@@ -1,13 +1,16 @@
 import UIKit
 
-@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
+        // Optional: Perform any setup tasks here
+        print("AppDelegate: didFinishLaunchingWithOptions")
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
+    
+    // Add other delegate methods if needed
+    // e.g. for push notifications, handling URLs, etc.
 }
